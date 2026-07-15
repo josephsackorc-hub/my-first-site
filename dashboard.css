@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images.jpg);
+  color: white;
+  overflow-x: hidden;
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  background-color: rgb(156, 169, 156);
+  width: 300px;
+  border-right: 2px solid red;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-logo {
+  padding: 24px;
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  color: yellow;
+}
+.sidebar-logo h2 {
+  color: green;
+  font-weight: 100;
+  font-size: 40px;
+}
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px 18px;
+}
+.sidebar-menu a {
+  display: flex;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  gap: 8px;
+}
+.sidebar-menu a:hover {
+  background-color: yellowgreen;
+}
+.fa-star {
+  color: green;
+  font-weight: 300px;
+}
+.fa-bookmark {
+  color: yellow;
+  font-weight: 400px;
+}
+.fa-calendar-days {
+  color: lightskyblue;
+  font-weight: 500;
+}
+.fa-file-lines {
+  color: green;
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  flex-grow: 1;
+  padding: 24px;
+}
+.content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: 32px;
+  align-items: center;
+}
+.header-text {
+  font-size: 1.235rem;
+  color: yellow;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  float: right;
+}
+.profile-avator {
+  background-color: blue;
+  border-radius: 16px;
+  width: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  margin-left: 60px;
+}
+.search-bar {
+  display: flex;
+  width: 600px;
+  margin: 10px 0px 10px 50px;
+  margin-left: 60px;
+}
+.search-bar input {
+  justify-content: end;
+  padding: 10px;
+  height: 40px;
+  max-width: 300pt;
+  margin-left: 60px;
+  width: 700pt;
+  border: none;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: grey;
+}
